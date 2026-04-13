@@ -9,7 +9,6 @@ server = conf.Server()
 server.listen()
 try:
     cl_res, client_socket = server.process(average)
-    print(server.socket._closed)
     client_socket.send(str(cl_res).encode())
     client_socket.close()
 
