@@ -1,0 +1,8 @@
+EJERCICIO 7: Validador de Emails
+Van a crear un servidor que revise si un email tiene formato válido. El cliente manda una
+dirección y el servidor verifica estas reglas: no puede tener espacios, tiene que tener un @,
+tiene que tener solo un @, antes del @ tiene que haber algo, después del @ tiene que haber
+un punto, y el dominio no puede empezar ni terminar con punto. Si algo falla, el servidor tiene
+que decir qué está mal. Si está todo bien, tiene que decir que el email es válido. Usan métodos
+como count(), split(), startswith() y endswith(). El cliente puede probar varios emails hasta que
+escriba "salir".

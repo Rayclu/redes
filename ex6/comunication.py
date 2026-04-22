@@ -15,6 +15,7 @@ class _ConectionConf:
 class Server(_ConectionConf):
     def __init__(self, direccion = ("127.0.0.1", 8080)):
         super().__init__(direccion)
+        self.socket.setsockopt(skt.SOL_SOCKET, skt.SO_REUSEADDR, 1)
         self.socket.bind(direccion)
 
     def listen(self) -> None:
@@ -35,9 +36,7 @@ class Server(_ConectionConf):
         try:
             cl, add = self.acept()
             data = cl.recv(1024).decode()
-            print("Data es: \t", data)
             res = callback(data)
-            print("res es: \t", res)
             return res, cl
         except:
             self.close()
@@ -57,7 +56,7 @@ class Client(_ConectionConf):
         try:
             print("Recibiendo data en cliente")
             data = self.socket.recv(tamaño).decode()
-            print("Data es: ", data)
+            print(data)
             return data
         except:
             self.close()

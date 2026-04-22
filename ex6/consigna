@@ -1,0 +1,7 @@
+Van a hacer un servidor que genere un número al azar dentro
+de un rango que elija el cliente. El cliente manda dos números separados por
+coma, por ejemplo "1,100", y el servidor tiene que devolver un número
+aleatorio entre esos dos valores. Para eso usan el módulo random y la función
+randint(). Tienen que validar que el mínimo sea más chico que el máximo y que
+ambos sean números. El cliente tiene que poder probar varios rangos hasta que
+escriba "salir".
