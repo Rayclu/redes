@@ -1,0 +1,6 @@
+Explicación
+Van a hacer un servidor que verifique si un número es primo o no. El cliente manda un
+número y el servidor tiene que decir si es primo (solo divisible por 1 y por sí mismo) o
+no. El servidor tiene que responder con un mensaje que diga "El numero X es primo" o
+"El numero X no es primo". Validar que el número sea mayor a 1. El cliente puede
+probar varios números hasta que escriba "salir".
