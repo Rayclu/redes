@@ -1,20 +1,17 @@
 from comunication import Server
 from random import choice
 
-def ImcCalculator(data: str) -> str:
-    print("CALCULANDO.....")
-    peso, altura = data.split(",")
-    print("SPLITEADO")
-    res = float(peso) / (float(altura) * float(altura))
-    if res < 18.5: #bajo peso
-        return f"{res:.1f}, peso bajo"
-    elif 18.5 <= res <= 24.9: #peso normal
-        return f"{res:.1f}, peso normal"
-    elif 25 <= res <= 29.9: #sobrepeso
-        return f"{res:.1f}, sobrepeso"
-    else: #obesidad
-        return f"{res:.1f}, obesidad"
-
+def numeros_primos(n):
+    n = int(n)
+    if n!=0:
+        if n==2:
+            return f"{n} es un numero primo"
+        elif n%n == 0 and n% 1 == 0 and n%2 !=0 :
+            return f"{n} es un numero primo"
+        else:
+            return f"{n} no es primo"
+    else:
+        return "su numero es 0"
 server = Server()
 
 try:
@@ -22,7 +19,7 @@ try:
     while True:
         try:
             print("try:")
-            result = server.process(ImcCalculator)
+            result = server.process(numeros_primos)
             print(result, type(result))
             if result is None:
                 print("Error en la conexión, esperando nuevo cliente...")
