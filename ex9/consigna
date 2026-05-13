@@ -1,0 +1,8 @@
+EJERCICIO 11: Piedra, Papel o Tijera
+Van a hacer un servidor para jugar al Piedra, Papel o Tijera. El cliente manda su jugada (piedra,
+papel o tijera) y el servidor elige una al azar. Después compara las dos jugadas, decide quién
+gana y manda el resultado. Las reglas son: piedra le gana a tijera, tijera le gana a papel, papel
+le gana a piedra. Si eligen lo mismo es empate. El servidor tiene que responder con un mensaje
+que muestre la jugada del cliente, la del servidor y quién ganó. Si el cliente manda algo que no
+es piedra, papel o tijera, el servidor tiene que decirle que esa jugada no es válida. El cliente
+tiene que poder jugar varias partidas hasta que escriba "salir".

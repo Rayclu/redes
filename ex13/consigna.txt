@@ -1,0 +1,8 @@
+Explicación
+Van a hacer un servidor que convierta entre dólares y pesos argentinos. El cliente manda un
+valor y la moneda de origen, por ejemplo "100,USD" para convertir 100 dólares a pesos, o
+"50000,ARS" para convertir 50 mil pesos a dólares. El servidor tiene que usar una tasa de
+cambio fija (por ejemplo 1 dólar = 900 pesos). El resultado tiene que mostrarse con dos
+decimales. También hay que validar que el formato sea correcto (valor y moneda separados
+por coma), que el valor sea un número y que la moneda sea USD o ARS. El cliente tiene que
+poder hacer varias conversiones hasta que escriba "salir".
